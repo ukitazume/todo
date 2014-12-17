@@ -6,6 +6,7 @@ end
 source 'https://rubygems.org'
 
 gem 'rails', '~> 3.2.12'
+gem 'stripe', :git  => 'https://github.com/stripe/stripe-ruby.git'
 
 gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
