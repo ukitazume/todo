@@ -11,6 +11,7 @@ on_utilities("sidekiq") do
     sudo "kill -TERM `cat #{pid_file}`" if File.exist?(pid_file)
   end
 
-  sleep sidekiq_timeout
+  sleep (sidekiq_timeout + 2)
+  sudo "monit start all -g #{config.app}_sidekiq"
   sudo "monit monitor all -g #{config.app}_sidekiq"
 end
