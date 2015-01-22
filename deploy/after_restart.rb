@@ -8,7 +8,7 @@ on_utilities("sidekiq") do
 
   (0...worker_count).each do |i|
     pid_file = "/var/run/engineyard/sidekiq/#{config.app}/sidekiq_#{i}.pid"
-    run "kill -TERM `cat #{pid_file}`" if File.exist?(pid_file)
+    sudo "kill -TERM `cat #{pid_file}`" if File.exist?(pid_file)
   end
 
   sleep sidekiq_timeout
