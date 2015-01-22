@@ -13,5 +13,4 @@ on_utilities("sidekiq") do
 
   sleep sidekiq_timeout
   sudo "monit monitor all -g #{config.app}_sidekiq"
-  sudo "monit start all -g #{config.app}_sidekiq"
 end
