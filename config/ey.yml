@@ -135,7 +135,7 @@ defaults:
   # For example, if you rename a column, all traffic served during
   # that migration will be broken until the new code is deployed.
   #
-  maintenance_on_migrate: false
+  maintenance_on_migrate: true
 
   # Enable maintanence page during every deploy.
   # Unicorn and Passenger support no-downtime deploys, so the default
