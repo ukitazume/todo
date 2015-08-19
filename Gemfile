@@ -5,18 +5,17 @@ end
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.12'
+gem 'rails', '~>4.2.1'
 
 gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
-gem 'rails_autolink', '~> 1.1'
-gem 'simple_form', '~> 2.1'
-gem 'dogapi'
+gem 'rails_autolink'
+gem 'simple_form'
 
 group :assets do
-  gem 'sass-rails', '~> 3.2'
-  gem 'coffee-rails', '~> 3.2'
-  gem 'uglifier', '~> 2.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 platform :ruby do
@@ -26,9 +25,8 @@ platform :ruby do
 
   gem 'newrelic_rpm', '~> 3.6'
   gem 'unicorn', '~> 4.7'
-  gem 'puma', '~> 2.6'
+  # gem 'puma', '~> 2.6'
   gem 'json', '~> 1.8'
-  gem 'minitest', '~> 4.7'
   gem 'psych', '~> 2.0'
   gem 'racc', '~> 1.4'
 end
