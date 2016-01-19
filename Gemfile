@@ -11,6 +11,7 @@ gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
 gem 'rails_autolink'
 gem 'simple_form'
+gem 'bundler', '1.11.2', :require => false
 
 group :assets do
   gem 'sass-rails'
