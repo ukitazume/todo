@@ -41,6 +41,9 @@ module Listr
 
     config.assets.enabled = true
     config.assets.version = '1.0'
+    config.assets.paths << Rails.root.join("app", "assets", "stylesheets", "web")
+    config.assets.precompile += %w( web/application_web.css )
+    config.active_job.queue_adapter = :delayed_job
 
   end
 end
