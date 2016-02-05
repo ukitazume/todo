@@ -13,6 +13,7 @@ gem 'rails_autolink'
 gem 'simple_form'
 gem 'bundler', '1.11.2', :require => false
 gem "delayed_job_active_record"
+gem 'puma'
 
 
 group :assets do
