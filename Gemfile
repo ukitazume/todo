@@ -6,7 +6,6 @@ end
 source 'https://rubygems.org'
 
 gem 'rails', '~>4.2.1'
-gem 'rqrcode'
 
 gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
