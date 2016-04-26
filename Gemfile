@@ -5,6 +5,7 @@ end
 
 source 'https://rubygems.org'
 
+ruby "2.2.4"
 gem 'rails', '~>4.2.1'
 
 gem 'ey_config', '0.0.6'
