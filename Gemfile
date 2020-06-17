@@ -6,12 +6,12 @@ end
 source 'https://rubygems.org'
 
 ruby "2.2.3"
-gem 'rails', '~>4.2.1'
+gem 'rails', '~> 5.0.0'
 
 gem 'ey_config', '0.0.6'
-gem 'jquery-rails', '~> 3.0'
-gem 'rails_autolink'
-gem 'simple_form'
+gem 'jquery-rails', '~> 4.4', '>= 4.4.0'
+gem 'rails_autolink', '>= 1.1.6'
+gem 'simple_form', '>= 3.2.1'
 gem 'bundler', '1.11.2', :require => false
 gem "delayed_job_active_record"
 gem 'settingslogic'
@@ -19,8 +19,8 @@ gem 'settingslogic'
 
 
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 5.0.5'
+  gem 'coffee-rails', '>= 4.1.1'
   gem 'uglifier'
 end
 
@@ -30,7 +30,7 @@ platform :ruby do
   gem 'sqlite3', '1.3.10' # 1.3.9 broken on rbx
 
   gem 'newrelic_rpm', '~> 3.6'
-  gem 'unicorn', '~> 4.7'
+  gem 'unicorn', '~> 4.9', '>= 4.9.0'
   # gem 'puma', '~> 2.6'
   gem 'json', '~> 1.8'
   gem 'psych', '~> 2.0'
