@@ -9,7 +9,7 @@ ruby "2.2.3"
 gem 'rails', '~>4.2.1'
 
 gem 'ey_config', '0.0.6'
-gem 'jquery-rails', '~> 3.0'
+gem 'jquery-rails', '~> 3.1', '>= 3.1.3'
 gem 'rails_autolink'
 gem 'simple_form'
 gem 'bundler', '1.11.2', :require => false
