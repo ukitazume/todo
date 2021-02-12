@@ -6,11 +6,11 @@ end
 source 'https://rubygems.org'
 
 ruby "2.2.3"
-gem 'rails', '~>4.2.1'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 
 gem 'ey_config', '0.0.6'
 gem 'jquery-rails', '~> 3.0'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'simple_form'
 gem 'bundler', '1.11.2', :require => false
 gem "delayed_job_active_record"
