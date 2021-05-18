@@ -6,12 +6,12 @@ end
 source 'https://rubygems.org'
 
 ruby "2.2.3"
-gem 'rails', '~>4.2.1'
+gem 'rails', '~> 4.2.1'
 
 gem 'ey_config', '0.0.6'
-gem 'jquery-rails', '~> 3.0'
-gem 'rails_autolink'
-gem 'simple_form'
+gem 'jquery-rails', '~> 3.1', '>= 3.1.2'
+gem 'rails_autolink', '>= 1.1.6'
+gem 'simple_form', '>= 3.1.0'
 gem 'bundler', '1.11.2', :require => false
 gem "delayed_job_active_record"
 gem 'settingslogic'
@@ -19,8 +19,8 @@ gem 'settingslogic'
 
 
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
+  gem 'sass-rails', '>= 5.0.3'
+  gem 'coffee-rails', '>= 4.1.0'
   gem 'uglifier'
 end
 
